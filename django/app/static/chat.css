@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(217, 217, 217);
+}
+main{
+    height: 98%;
+    width: 100%;
+
+    display: flex;
+    
+    margin-top: 2%;
+    justify-content: center;
+    gap: 5%;
+}
+.logo_bep{
+    width: 173px;
+    height: 173px;
+}
+.chat{
+    background-color: rgb(200, 200, 200);
+    height: 90%;
+    width: 44%;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 2%;
+}
+.chat__msg_box{
+    margin-top: 4%;
+    height: 85%;
+    width: 95%;
+    font-family: "Inter", sans-serif;
+    font-size:medium;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.chat__msg_box__bot{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: end;
+}
+.chat__msg_box__user{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    
+}
+.chat__msg_box__bot p{
+    max-width: 50%;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    background-color: rgb(60, 80, 170);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.chat__msg_box__user p{
+    max-width: 50%;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    background-color: rgb(238, 146, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.chat__input{
+    width: 94%;
+    height: 8.6%;
+    border-radius: 15px;
+    background-color: rgb(217, 217, 217);
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    
+}
+.chat__input input{
+    all:unset;
+    margin-left: 1%;
+    height: 100%;
+    width: 95%;
+
+}
+.chat_icon{
+    width: 45px;
+    height: 48px;
+    margin-bottom: 5px;
+}
+.infos{
+    width: 24%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 28;
+}
+.infos__dolar{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.infos__token{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.infos_segmento{
+    width: 100%;
+    height: 20%;
+}
+.infos_title_entrada{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 100, 0);
+    color: rgb(217, 217, 217);
+    font-weight: bold;
+}
+.valor_token_entrada{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: rgb(215, 120, 0);
+    color: rgb(217, 217, 217);
+}
+.contagem_token_entrada{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: rgb(238, 146, 0);
+    color: rgb(217, 217, 217);
+}
+.infos_title_saida{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: #283C96;
+    color: rgb(217, 217, 217);
+    font-weight: bold;
+}
+.valor_token_saida{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: #3C50AA;
+    color: rgb(217, 217, 217);
+}
+.contagem_token_saida{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: #5064BE;
+    color: rgb(217, 217, 217);
+}
+.infos_title_totais{
+    display: flex;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    justify-content: center;
+    background-color: #283C96;
+    color: rgb(217, 217, 217);
+    font-weight: bold;
+}
+.valor_token_totais{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: rgb(215, 120, 0);
+    color: rgb(217, 217, 217);
+}
+.contagem_token_totais{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    background-color: rgb(238, 146, 0);
+    color: rgb(217, 217, 217);
+}
