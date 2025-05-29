@@ -106,13 +106,19 @@ main{
 }
 .categorias button{
     all: unset;
-    width: 40%;
+    width: 60%;
     height: 5%;
     border-radius: 15px;
     text-align: start;
     background: linear-gradient(to right,#A4A1A1, #7D7D7D);
     color: white;
     font-family: 'roboto';
+    display: flex;
+    justify-content: space-around;
+}
+.categorias button img{
+    width: 33px;
+    height: 36px;
 }
 .infos{
     width: 32%;
