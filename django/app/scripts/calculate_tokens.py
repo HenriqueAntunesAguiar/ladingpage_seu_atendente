@@ -1,4 +1,4 @@
-def calculte_tokens(value_input_token, value_output_token, total_value_token, input_token, output_token, total_token, answer):
+def calculte_tokens(request, answer):
     
     CUSTO_ENTRADA_FLASH = 0.075
     CUSTO_SAIDA_FLASH = 0.30

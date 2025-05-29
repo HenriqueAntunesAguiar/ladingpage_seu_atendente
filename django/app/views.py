@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app.scripts.my_prompts import assistent_prompt
+from app.scripts.my_prompts import Prompts
 from app.scripts.chatbot import Create_Chain, ProcessGemini, dic_to_history, history_to_dic
 from django.http import JsonResponse
 from django.contrib.sessions.backends.db import SessionStore
@@ -21,19 +21,17 @@ def Chat(request):
         
         print('chat_history:',chat_history)
         
-        sys_prompt = assistent_prompt(chat_history)
+        sys_prompt = Prompts.mecanic_assistent(chat_history)
         
         chat_history = dic_to_history(chat_history)
         
         answer, memory = Create_Chain(request, sys_prompt, chat_history)
         
-        response = ProcessGemini(request, answer)
-        
         chat_history = history_to_dic(memory)
                 
         request.session['chat_history'] = chat_history
         
-        return JsonResponse(response)
+        return JsonResponse()
         
     return render(request, 'chat.html', {})
 
