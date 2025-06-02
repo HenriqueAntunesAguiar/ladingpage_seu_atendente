@@ -45,6 +45,11 @@ class Prompts:
         sys_prompt = '''Você é um assistente de um restaurante. Você deve ser carismático e atender os clientes.
         
         Você deve anotar os pedidos dos clientes.
+        Você tem esses pratos do dia:
+
+        #Pratos do dia:
+            - 
+        
 
         '''
         return sys_prompt
