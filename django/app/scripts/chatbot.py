@@ -1,17 +1,18 @@
 import os
 
 from dotenv import load_dotenv
-from app.scripts.calculate_tokens import calculte_tokens
+# from .calculate_tokens import calculte_tokens
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 
-from app.scripts.my_prompts import Prompts
+import sys
+from my_prompts import Prompts
 
 def Create_Chain(sys_prompt, memory, user_input):
     
-    if len(memory.chat_memory.messages) > 20:
-        memory = memory[2:]  
+    # if len(memory.chat_memory.messages) > 20:
+    #     memory = memory[2:]  
     
     prompt = ChatPromptTemplate.from_messages(
         [
@@ -37,22 +38,25 @@ def Create_Chain(sys_prompt, memory, user_input):
     llm = ChatGoogleGenerativeAI(
         api_key=os.getenv('API_KEY'),
         model=MODEL,
-        temperature=2,
+        temperature=0.2,
         max_output_tokens=8192,
-        response_mime_type="text/plain"
+        response_modalities=[0]
     )  
     
     chain = prompt | llm
     
-    print(f'sys_prompt: {sys_prompt}')
     answer = chain.invoke({'sys_prompt':sys_prompt,
                           'question':user_input})
     
     memory.chat_memory.add_user_message(user_input)
 
     memory.chat_memory.add_ai_message(answer.content)
-
-    print(f'Quantidade histórico: {len(memory.chat_memory.messages)}\n {memory.chat_memory.messages}')
     
+    print(memory)
     return answer, memory
 
+sys_prompt = Prompts.restaurant_assistent()
+memory=[]
+while True:
+    user_input = input("User:")
+    answer, memory = Create_Chain(sys_prompt, memory, user_input)

@@ -47,9 +47,19 @@ class Prompts:
         Você deve anotar os pedidos dos clientes.
         Você tem esses pratos do dia:
 
-        #Pratos do dia:
-            - 
+        # Pratos do dia:
+            - Filé de frango grelhado com molho de mostarda e mel
+
+            - Carne moída refogada com abobrinha
+
+            - Peixe assado com ervas finas
+
+            - Omelete de espinafre e queijo branco
+
+            - Lasanha de berinjela (light)
         
+        # Acompanhamentos do dia:
+            Arroz integral + Brócolis no vapor + Purê de abóbora
 
         '''
         return sys_prompt
