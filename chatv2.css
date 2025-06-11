@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#chat_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(mecanica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 67%;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+.chat__menu{
+    height: 100%;
+    width: 32%;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-right: 1px solid rgba(255, 255, 255, 0.19);
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.25);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#chat__menu_title{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 24px;
+}
+.chat__menu__exemplos{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.chat__menu__exemplos span{
+    margin-left: 5%;
+}
+#mecanica{
+    background-color: #1A292B;
+    transition: background-color 0.5s ease-in-out;
+}
+#mecanica:hover{
+    background-color: #1A292B;
+    transition: background-color 0.5s ease-in-out;
+}
+#lavajato:hover{
+    background-color: #53696D;
+    transition: background-color 0.5s ease-in-out;
+}
+#restaurante:hover{
+    background-color: #C22C27;
+    transition: background-color 0.5s ease-in-out;
+}
+#odontologia:hover{
+    background-color: #47616B;
+    transition: background-color 0.5s ease-in-out;
+}
+#clique_aqui{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.494);
+}
+.chat__mensages{
+    height: 100%;
+    width: 68%;
+    background-color: rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.chat__mensages__cost{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 11%;
+    width: 100%;
+    gap: 5%;
+    color: white;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.chat__mensages__cost span{
+    margin-left: 10%;
+}
+.chat__mensages__mensages{
+    height: 76%;
+    width: 100%;
+}
+.mensage{
+    margin-top: 3%;
+    max-width: 44%;
+    width:auto;
+    height: auto;
+    padding: 1%;
+    background-color: rgb(47,47,47);
+    font-size: 20px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+.mensage_bot{
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-left: 1%;
+}
+.mensage_user{
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    margin-left: 52%;
+    background-color: #E3E3E3;
+    color: #363636;
+}
+.elemento {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.chat__mensages__bar{
+    width: 88%;
+    height: 8%;
+    background-color: #E1E1E1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.chat__mensages__bar__plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    font-size: 32px;
+    color: #646464;
+    font-weight: bold;
+}
+.chat__mensages__bar__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+}
+.chat__mensages__bar__input input{
+    font-family: "Roboto Mono", monospace;
+    all: unset;
+    width: 100%;
+    height: 100%;
+}
+.chat__mensages__bar__send{
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    font-size: 16px;
+    color: #646464;
+}
+#vantagens_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(robo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 5%;
+}
+.segmento_vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10%;
+    align-items: center;
+    height: 65%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.segmento_vantagens img{
+    margin-top: 5%;
+}
+.segmento_vantagens span{
+    display: flex;
+    gap:5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 72%;
+    font-family: "Roboto Slab", monospace;
+}
+.segmento_vantagens__title{
+    font-size: 34px;
+}

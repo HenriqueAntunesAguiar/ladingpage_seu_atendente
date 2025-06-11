@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatv2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="chat_section">
+        <div class="chat">
+
+            <div class="chat__menu">
+                <span id="chat__menu_title">Exemplos</span>
+                <div id='mecanica' class="chat__menu__exemplos" onclick='Mecanico()'>
+                    <span>Mecânica</span>
+                    <span id='clique_aqui'>Clique aqui para ver o chat</span>
+                </div>
+                <div id='lavajato' class="chat__menu__exemplos" onclick='LavaJato()'>
+                    <span>Lava-jato</span>
+                    <span id='clique_aqui'>Clique aqui para ver o chat</span>
+                </div>
+                <div id='restaurante' class="chat__menu__exemplos" onclick='Restaurante()'>
+                    <span>Restaurantes</span>
+                    <span id='clique_aqui'>Clique aqui para ver o chat</span>
+                </div>
+                <div id='odontologia' class="chat__menu__exemplos" onclick='Odontologia()'>
+                    <span>Odontologia</span>
+                    <span id='clique_aqui'>Clique aqui para ver o chat</span>
+                </div>
+            </div>
+
+            <div class="chat__mensages">
+                <div class="chat__mensages__cost">
+                    <span>Custo desse chat:</span><strong>U$ 0.00000</strong> 
+                </div>
+                <div class="chat__mensages__mensages">
+                    <div class="mensage_bot mensage">
+                        <span>Olá, em que posso te ajuda?Olá, em que posso te ajuda?Olá, em que posso te ajuda?</span>
+                    </div>
+                    <div class="mensage_user mensage">
+                        <span>Nada, não.</span>
+                    </div>
+                </div>
+                <div class="chat__mensages__bar">
+                    <div class="chat__mensages__bar__plus">
+                        +
+                    </div>
+                    <div class="chat__mensages__bar__input">
+                        <input type="" placeholder="Tenha o melhor atendimento para sua a empresa.">
+                    </div>
+                    <div class="chat__mensages__bar__send">
+                        Send
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="vantagens_section">
+        <div class="segmento_vantagens">
+            <img src="atendimento.png" alt="">
+            <span class="segmento_vantagens__title">Atendimento 24/7</span>
+            <span>Respostas instantâneas a clientes a qualquer hora, reduzindo perda de oportunidades fora do horário comercial.</span>
+        </div>
+        <div class="segmento_vantagens">
+            <img src="rede_neural.png" alt="">
+            <span class="segmento_vantagens__title">Tecnologia avançada</span>
+            <span>Respostas instantâneas a clientes a qualquer hora, reduzindo perda de oportunidades fora do horário comercial.</span>
+        </div>
+        <div class="segmento_vantagens">
+            <img src="atendimento_personalizado.png" alt="">
+            <span class="segmento_vantagens__title">Serviço personalizado</span>
+            <span>Oferece recomendações e atendimento individualizado</span>
+        </div>
+    </section>
+    <script src="chat.js"></script>
+</body>
+</html>
