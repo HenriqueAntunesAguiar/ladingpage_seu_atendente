@@ -1,9 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from app.views import Chat, ProcessGemini
+from app.views import setup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Chat, name='chat' ),
-    path('process-question/',ProcessGemini, name='process-question'),
+    path('',setup,name='setup')
 ]

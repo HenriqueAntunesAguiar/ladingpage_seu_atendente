@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Roboto Serif", monospace;
+    font-size: 24px;
+    gap: 5%;
+}
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left_side{
+    width: 40%;
+    height: 100%;
+}
+.main_setup_items{
+    height: 80%;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    overflow-y: scroll;
+}
+.setup_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10%;
+    max-height: 10%;
+    gap: 5%;
+    font-size: 24px;
+}
+.setup_items__item{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3E3E3;
+    gap: 5%;
+    font-family: "Roboto Serif", monospace;
+    border-radius: 15px;
+    
+}
+.setup_items__item:hover{
+    box-shadow: 5px 5px 0 #FF871D;  
+}
+#buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 5%;
+    
+}
+.button{
+    all:unset;
+    background-color: #CECECE;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: "Roboto Serif", monospace;
+}
+.button {
+    padding: 1.5%;
+}
+.button:hover{
+    box-shadow: 5px 5px 0 #FF871D;
+}
+#right_side{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+#version_line{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Racing Sans One", sans-serif;
+}
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+.chat__mensages{
+    height: 100%;
+    width: 100%;
+    background-color: #CECECE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.chat__mensages__mensages{
+    height: 76%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+.mensage{
+    margin-top: 3%;
+    max-width: 44%;
+    width:auto;
+    height: auto;
+    padding: 1%;
+    background-color: rgb(47,47,47);
+    font-size: 20px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    box-shadow: 3px 3px 1px rgba(47, 47, 47, 0.25);
+
+}
+.mensage_bot{
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-left: 1%;
+}
+.mensage_user{
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    margin-left: 52%;
+    background-color: #E3E3E3;
+    color: #363636;
+}
+.chat__mensages__bar{
+    width: 88%;
+    height: 8%;
+    background-color: #E1E1E1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.chat__mensages__bar__input{
+    width: 80%;
+}
+.chat__mensages__bar__input input{
+    all: unset;
+    width: 100%;
+    height: 100%;
+}
+.chat__mensages__bar__send{
+    color: #363636;
+
+}
