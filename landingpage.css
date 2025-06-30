@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+body{
+    width: 99vw;
+    height: 100vh;
+}
+.my__background_word{
+    font-family: "Racing Sans One", sans-serif;
+    color: #8EB69B;
+    font-size: 140px;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my__sublime{
+    background-color: rgba(black);
+}
+.my__font_roboto{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.container-fluid{
+    max-width: 70%;
+}
+.navbar-nav{
+    /* background-color: black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    height: 90%;
+}
+.my__card_content{
+    height: 100%;
+}
+.my__img_background{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    background-color: #163832;
+}
+.my__cart_body{
+    margin: 5%;
+}
+.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+
+    }
+.my__img_div{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
+}
+.my__card_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.my__imgs_vantagens{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #163832;
+}
+.flutuando {
+    animation: flutuar 3s ease-in-out infinite;
+    display: inline-block; /* importante para evitar bugs com elementos inline */
+  }
+
+  @keyframes flutuar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+.my__imgs_vantagens__div_img{
+    width: 85%;
+}
+.my__imgs_vantagens__img1{
+    display: flex;
+    justify-content: start;
+}
+.my__imgs_vantagens__img2{
+    display: flex;
+    justify-content: center;
+}
+.my__imgs_vantagens__img3{
+    display: flex;
+    justify-content: end;
+}
+.my__list_group{
+    width: 100%;
+}
+.my__list_group li{
+    margin: 5%;
+}
+.my__btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+/* Quando o botão estiver selecionado */
+input[type="radio"]:checked + .my__btn {
+  background-color: #8eb69b;
+  color: white;
+  border-color: #8eb69b;
+}
+.my__chat{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.minha-scroll {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.my__chat_msg_line{
+    width: 100%;
+    font-size: 15px;
+}
+.my__chat_msg_line_user{
+    display: flex;
+    justify-content: start;
+}
+.my__chat_msg_line_bot{
+    display: flex;
+    justify-content: end;
+}
+.my__msg_user{
+    width: 50%;
+    border-radius: 15px 15px 15px 0px;
+    background-color: #163832;
+}
+.my__msg_bot{
+    width: 50%;
+    border-radius: 15px 15px 0px 15px;
+    background-color: #235347;
+}
+.my__msg_user p{
+    margin:5%
+}
+.my__msg_bot p{
+    margin:5%
+}
+.racing_font{
+    font-family: "Racing Sans One", sans-serif;
+}
+.my__price_pricing{
+    margin-top: 5%;
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 36px;
+}
+.my__text_pricing{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
